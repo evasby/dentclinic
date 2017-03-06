@@ -316,6 +316,8 @@ input {
       border-style: solid;
       border-width: 5px 4.5px 0 4.5px;
       border-color: #ffffff transparent transparent transparent; } }
+  .zone-menu-wrapper .sf-accordion-toggle {
+    display: none; }
 
 .menu-toggle {
   padding: 0 20px;
