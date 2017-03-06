@@ -1,0 +1,38 @@
+.red-button{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	max-width: 195px;
+  //height: 43px;
+	height: 46px;
+  line-height: 19px;
+	padding: 2px 0 0;
+	margin: 25px auto 0;
+	border: 1px solid #d22525;
+	border-radius: 4px;
+	background: rgba(251,54,54,1);
+  background: linear-gradient(to bottom, rgba(251,54,54,1) 0%, rgba(212,57,57,1) 100%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  @include link(#fff, #fff);
+  &:hover{
+  	text-decoration: none;
+  	background: linear-gradient(to bottom, rgba(212,57,57,1) 0%, rgba(251,54,54,1) 100%);
+  }
+  @include break1{
+  	float: right;
+  	padding: 5px 0 0;
+  	font-size: 9px;
+    height: 54px;
+  }
+  @include break2{
+  	padding: 3px 0 0;
+  	font-size: 12px;
+    height: 46px;
+  }
+  @include break3{
+  	padding: 2px 0 0;
+  	font-size: 15px;
+  }
+}

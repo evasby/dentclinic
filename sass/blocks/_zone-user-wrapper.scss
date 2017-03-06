@@ -1,0 +1,41 @@
+.zone-user-wrapper{
+	padding: 0 0 13px!important;
+	p{
+		margin: 0;
+	}
+	.region-user-first{
+		img{
+			display: block;
+			float: none!important;
+			margin: 20px auto 0;
+			width: 100%!important;
+			height: auto!important;
+			max-width: 207px;
+			@include break1{
+				float: left!important;
+				margin: 20px 0 0;
+			}
+		}
+	}
+	.region-user-second2{
+		img{
+			display: block;
+			width: 100%!important;
+			height: auto!important;
+			max-width: 278px;
+			margin: 23px auto 0;
+		}
+	}
+	.region-user-third{
+		img{
+			display: block;
+			width: 100%!important;
+			height: auto!important;
+			max-width: 269px;
+			margin: 25px auto 0;
+		}
+	}
+	.region-user-fourth{
+
+	}
+}

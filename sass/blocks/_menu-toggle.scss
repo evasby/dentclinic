@@ -1,0 +1,71 @@
+.menu-toggle{
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	@include break1{
+		display: none;
+	}
+	&_switch{
+		height: 25px;
+		width: 30px;
+		padding: 5px 0 0;
+		position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    /*&__on{
+    	background-color: #2a2a2a;
+    	position: fixed;
+    	top: 0;
+    }*/
+
+	}
+	&_lines{
+    display: block;
+    width: 30px;
+    height: 4px;
+    position: relative;
+    background-color: #fff;
+    .menu-toggle__on &{
+    	background-color: transparent;
+    	@include old-ie{
+				background-color: #fff;
+    	}
+    }
+    &:before{
+	    content: "";
+	    height: 4px;
+	    width: 100%;
+	    position: absolute;
+	    top: -8px;
+	    left: 0;
+	    background-color: #fff;
+	    transition: transform .3s;
+	    .menu-toggle__on &{
+	    	transform: translate(0, 8px) rotate(45deg);
+	    }
+	  }
+	  &:after{
+	    content: "";
+	    height: 4px;
+	    width: 100%;
+	    position: absolute;
+	    top: 8px;
+	    left: 0;
+	    background-color: #fff;
+	    transition: transform .3s;
+	    .menu-toggle__on &{
+	    	transform: translate(0, -8px) rotate(-45deg) ;
+	    }
+	  }
+	}
+}
+.block-superfish{
+	display: none;
+	@include break1{
+		display: block;
+	}
+}

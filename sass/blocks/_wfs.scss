@@ -1,0 +1,9 @@
+.wfs{
+	position: absolute;
+	bottom: -71px;
+	left: 50%;
+	margin-left: -39px;
+	@include break1{
+		position: static;
+	}
+}

@@ -1,0 +1,28 @@
+.zone-footer{
+	padding: 0 0 20px;
+	@include break1{
+		padding: 0;
+	}
+	.block-block-16{
+		/*max-width: 260px;
+		text-align: center;
+		margin: 0 auto;
+		@include break1{
+			width: auto;
+			margin: 0;
+		}*/
+	}
+	.footer-phone{
+		display: block;
+		text-align: center;
+		@include break1{
+			display: inline;
+		}
+	}
+	.tutop{
+		display: none;
+		@include break1{
+			display: inline
+		}
+	}
+}

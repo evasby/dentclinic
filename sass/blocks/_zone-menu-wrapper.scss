@@ -1,0 +1,217 @@
+.zone-menu-wrapper{
+	&,
+	*{
+		//box-sizing: border-box;
+	}
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 0;
+	@include break1{
+		position: static;
+		top: auto;
+		left: auto;
+		padding: 0;
+	}
+	.sf-menu li:hover > ul, .sf-menu li.sfHover > ul{
+		@include break1{
+			top: 44px;
+		}
+		@include break2{
+			top: 48px;
+		}
+	}
+	.sf-menu.sf-style-blue span{
+		display: block;
+  	position: relative;
+		border: 0px none #003973;
+		border-left: 0px solid #ccc;
+		border-right: 1px solid #ccc;
+		color: #fff;
+		padding: 2px 0 2px 5px;
+		font-family: PT Sans Narrow;
+		font-size: 15.4px;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		@include break1{
+			padding: 18px 15px;
+		}
+	}
+
+
+	.sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, .sf-menu.sf-navbar.sf-shadow ul ul{
+		background: none;
+		padding: 0!important;
+		@include break1{
+			background: url(../images/shadow.png) no-repeat right bottom;
+			padding: 0 8px 9px 0 !important;
+		}
+	}
+	
+	.sf-menu.sf-style-blue a,
+	.sf-menu.sf-style-blue span{
+		border: none;
+		padding: 2px 0 2px 5px;
+		@include break1{
+			padding: 18px 15px;
+			font-size: 12px!important;
+			border: 0px none #003973;
+			border-left: 0px solid #ccc;
+			//border-right: 1px solid #ccc;
+			position: relative;
+			&.sf-depth-1:after{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				height: 27px;
+				width: 1px;
+				margin-top: -13px;
+				background-color: #fff;
+			}
+			&.menuparent{
+				padding: 18px 20px 18px 10px;
+			}
+		}
+		@include break2{
+			padding: 18px 25px;
+			font-size: 14px!important;
+		}
+		@include break3{
+			padding: 18px 41px;
+			font-size: 15.4px!important;
+			&.menuparent{
+				padding: 18px 51px 18px 31px;
+			}
+		}
+	}
+	#menu-638-1{
+		border: none;
+		@include break1{
+			//border-left: 1px solid #ccc;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				height: 27px;
+				width: 1px;
+				margin-top: -13px;
+				background-color: #fff;
+			}
+		}
+	}
+	.sf-menu{
+		@include break1{
+			text-align: center;
+		}
+	}
+	.sf-menu ul{
+		position: static;
+		width: 100%;
+		height: auto;
+		text-align: left;
+		@include break1{
+			position: absolute;
+			width: 12em;
+		}
+	}
+	.sf-menu.sf-style-blue li:hover, .sf-menu.sf-style-blue li.sfHover, .sf-menu.sf-style-blue li.active a, .sf-menu.sf-style-blue a:focus, .sf-menu.sf-style-blue a:hover, .sf-menu.sf-style-blue a:active, .sf-menu.sf-style-blue.sf-navbar li li{
+		background: #134B8F;
+		@include break1{
+			background: #D23535;
+		}
+	}
+
+	.sf-menu li.sf-depth-1{
+		float: none;
+		@include break1{
+			float: none;
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	.sf-depth-2{
+		border-bottom: none;
+		@include break1{
+			border-bottom: 1px dotted #ccc;
+		}
+	}
+	li.sf-depth-2{
+		float: none;
+		@include break1{
+			margin: 0;
+		}
+		a.sf-depth-2{
+			padding: 1px 0 1px 10px;
+			font-size: 15.4px;
+			font-size: 12px!important;
+			@include break1{
+				font-size: 12px!important;
+				padding: 12px 15px;
+			}
+			@include break2{
+				font-size: 14px!important;
+			}
+			@include break3{
+				font-size: 15.4px!important;
+			}
+		}
+	}
+	#menu-979-1,
+	#menu-851-1,
+	#menu-1103-1 {
+	  margin-top: 0 !important;
+	  border-top: none;
+	  @include break1{
+	  	border-top: 1px dotted #CCCCCC;
+	  	margin-top: 5px !important;
+	  }
+	}
+	span.menuparent,
+	a.menuparent{
+		@include break1{
+			&:before{
+				content: '';
+				position: absolute;
+				top: 21px;
+				right: 8px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 4.5px 0 4.5px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+		}
+		@include break2{
+			&:before{
+				content: '';
+				position: absolute;
+				top: 23px;
+				right: 8px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 4.5px 0 4.5px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+		}
+		@include break3{
+			&:before{
+				content: '';
+				position: absolute;
+				top: 24px;
+				right: 32px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 4.5px 0 4.5px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+		}
+	}
+}
