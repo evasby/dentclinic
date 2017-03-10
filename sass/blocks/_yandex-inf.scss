@@ -1,0 +1,12 @@
+.yandex-inf{
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	margin-left: -33px;
+	bottom: -110px;
+	@include break1{
+		margin: 0;
+		left: 0;
+		bottom: -38px;
+	}
+}
