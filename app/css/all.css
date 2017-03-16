@@ -515,3 +515,7 @@ input {
       margin: 0;
       left: 0;
       bottom: -38px; } }
+
+.view-otzyvy .views-field-title h5 {
+  margin: 10px 0 40px;
+  padding: 0 0 10px 10px; }
