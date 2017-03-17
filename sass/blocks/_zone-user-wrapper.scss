@@ -27,12 +27,31 @@
 		}
 	}
 	.region-user-third{
+		padding: 18px 0 0;
+		p{
+			line-height: 26px;
+			text-align: center;
+			@include break1{
+				text-align: left;
+			}
+		}
+		span{
+			@include break1{
+				font-size: 18px;
+			}
+			@include break2{
+				font-size: 22px;
+			}
+		}
+		a{
+			text-decoration: none;
+		}
 		img{
 			display: block;
 			width: 100%!important;
 			height: auto!important;
 			max-width: 269px;
-			margin: 25px auto 0;
+			margin: 9px auto 0;
 		}
 	}
 	.region-user-fourth{

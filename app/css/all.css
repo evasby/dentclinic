@@ -71,12 +71,28 @@ input {
     height: auto !important;
     max-width: 278px;
     margin: 23px auto 0; }
-  .zone-user-wrapper .region-user-third img {
-    display: block;
-    width: 100% !important;
-    height: auto !important;
-    max-width: 269px;
-    margin: 25px auto 0; }
+  .zone-user-wrapper .region-user-third {
+    padding: 18px 0 0; }
+    .zone-user-wrapper .region-user-third p {
+      line-height: 26px;
+      text-align: center; }
+      @media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+        .zone-user-wrapper .region-user-third p {
+          text-align: left; } }
+    @media all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+      .zone-user-wrapper .region-user-third span {
+        font-size: 18px; } }
+    @media all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation: landscape) {
+      .zone-user-wrapper .region-user-third span {
+        font-size: 22px; } }
+    .zone-user-wrapper .region-user-third a {
+      text-decoration: none; }
+    .zone-user-wrapper .region-user-third img {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 269px;
+      margin: 9px auto 0; }
 
 .red-button {
   -webkit-box-sizing: border-box;
