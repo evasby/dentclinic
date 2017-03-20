@@ -1,0 +1,12 @@
+.zone-branding-wrapper{
+	background-color: #f5f5f5;
+	img{
+		width: 100%;
+		height: auto;
+		margin: 0!important;
+		@include break1{
+			width: auto;
+			margin: 0 20px!important;
+		}
+	}
+}
