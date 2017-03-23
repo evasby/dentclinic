@@ -1,0 +1,8 @@
+.region-sidebar-first{
+	.node-type-webform &{
+		display: none;
+		@include break1{
+			display: block;
+		}
+	}
+}
