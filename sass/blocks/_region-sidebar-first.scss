@@ -1,5 +1,6 @@
 .region-sidebar-first{
-	.node-type-webform &{
+	.node-type-webform &,
+	.node-type-prices &{
 		display: none;
 		@include break1{
 			display: block;
